@@ -198,7 +198,7 @@ app.secret_key = "supersecretkey"
 def generate_code(prompt, output_dir="outputs"):
     url = "http://localhost:11434/api/generate"
     payload = {
-        "model": "codellama:7b",
+        "model": "qwen2.5-coder:7b",
         "prompt": prompt,
         "stream": False
     }
